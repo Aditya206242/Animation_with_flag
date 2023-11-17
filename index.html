@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Animation</title>
+    <style>
+        body {
+            
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            
+            filter: contrast(1.2) brightness(1.1) saturate(2) ;
+        }
+
+        .container1 {
+            background-color: rgb(239, 93, 9);
+            width: 100vw;
+            height: 33vh;
+             position: relative; 
+        }
+        .container2 {
+            background-color:white;
+            width: 100vw;
+            height: 33vh;
+             position: relative; 
+        }
+        .container3 {
+            background-color: rgb(7, 74, 21);
+            width: 100vw;
+            height: 33vh;
+             position: relative; 
+        }
+
+        .ball {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            width: 70px;
+            height: 70px;
+            border-radius: 70px;
+            background-color: rgb(54, 12, 12);
+            position: absolute; 
+            bottom: 0; 
+            animation: firstAnimation 1s ease-out alternate infinite, secondAnimation 5s linear alternate infinite  ;
+       
+
+            
+        }
+        @keyframes firstAnimation {
+            from{
+                bottom: 0;
+                
+                
+                
+                
+            }
+            to{
+                bottom: 100%;
+                
+            }
+            
+            
+        }
+        @keyframes secondAnimation {
+            from{
+                left: 0%;
+                
+                
+                
+                
+            }
+            to{
+               left:100%;
+
+                
+            }
+            
+            
+        }
+      
+        .container2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            
+        }
+        .container2 img{
+            width: 150px;
+            animation-name:ThirdAnimation;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
+            
+        }
+        @keyframes ThirdAnimation {
+            from{
+
+            }
+            to{
+                transform:rotate(360deg);
+                
+            }
+            
+        }
+        @media only screen and (max-width: 600px) {
+    .container1, .container2, .container3 {
+        height: 20vh; /* Adjust the height for smaller screens */
+    }
+    }
+    @media only screen and (max-width: 600px) {
+    .container2 img {
+        width: 100px; /* Adjust the image size for smaller screens */
+    }
+}
+@media only screen and (max-width: 600px) {
+    .ball {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+    /* body{
+        margin-top: 25vw;
+        background-color: black;
+    } */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+       
+        
+       
+    </div>
+    <div class="container2">
+        <img src="https://media.istockphoto.com/id/1140581548/vector/black-ashoka-chakra-symbol-of-national-flag-of-the-republic-of-india-isolated-on-white.jpg?s=612x612&w=0&k=20&c=kcPU7WbJ5Gl2DC8R_YIIFxnfuTz1m60hgUdjEU_NR0Y=" alt="">
+       
+        
+       
+    </div>
+    <div class="container3">
+       
+        
+       
+    </div>
+    <div class="ball">
+        jai hind 
+    </div>
+
+    
+
+    
+   
+</body>
+</html>
